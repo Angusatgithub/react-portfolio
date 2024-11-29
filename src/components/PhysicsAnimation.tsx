@@ -77,18 +77,26 @@ function PhysicsAnimation() {
         Runner.run(runner.current, engine.current);
     }
     
-    // Creates a new circular particle at the current mouse position
+    // Creates a new emoji particle at the current mouse position
     const addGrain = () => {
+        const emojis = ['✨', '⭐️', '💫', '🌟', '⚡️', '🔮'];
+        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+        const randomAngle = Math.random() * Math.PI * 2; // Random rotation
+        
         World.add(engine.current.world, [
-          Bodies.circle(posX.current, posY.current, 8, {
-            friction: 10,                               // How much it resists sliding
-            restitution: 1,                         // How bouncy it is (0 = no bounce)
-            density: 0.001,                            // How heavy it is
-            render: {
-              fillStyle: '#FEF4F0',                    // Inner color
-              strokeStyle: '#f34e1e',                  // Border color
-              lineWidth: 3                             // Border width
-            }}),
+            Bodies.circle(posX.current, posY.current, 12, {
+                friction: 10,
+                restitution: 0.9,
+                density: 0.001,
+                angle: randomAngle, // Add random rotation
+                render: {
+                    sprite: {
+                        texture: `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="background-color:transparent;"><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="20px">${randomEmoji}</text></svg>`,
+                        xScale: 1,
+                        yScale: 1
+                    }
+                }
+            })
         ]);
     }
     

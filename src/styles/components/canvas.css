@@ -1,0 +1,34 @@
+.intro-img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid var(--accent-color-orange);
+  border-radius: var(--radius-small);
+  background-color: var(--tint-orange);
+ }
+ 
+.intro-img canvas {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: var(--radius-small);
+    border: none;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  .canvas-container{
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+  }
+  
+  .animation-container {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+  }

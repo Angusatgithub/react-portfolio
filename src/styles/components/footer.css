@@ -1,0 +1,5 @@
+footer {
+    background-color: var(--accent-color-blue);
+    color: var(--color-text-inverted);
+    padding: var(--spacing-xlarge) 0;
+  }

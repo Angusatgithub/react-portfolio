@@ -1,0 +1,10 @@
+.overline {
+    display: flex;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+  
+  .small-shape {
+  height: 1.5rem;
+  width: 1.5rem;
+  }

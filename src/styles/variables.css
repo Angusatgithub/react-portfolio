@@ -1,0 +1,48 @@
+:root {
+    /* Colors */
+    --color-primary: #a259fe;
+    --color-background: #f5f5f5;
+    --color-text: #000;
+    --color-text-inverted: #f5f5f5;
+    --accent-color-green: #10a858;
+    --accent-color-blue: #5551fe;
+    --accent-color-orange: #f34e1e;
+  
+    /* Tint */
+    --tint-primary: #F6F0FF;
+    --tint-purple: hsl(265, 100%, 96%);
+    --tint-green: #F1FEF7;
+    --tint-blue: #E9EFF6;
+    --tint-orange: #FEF4F0;
+  
+    /* Typography */
+    --font-family: "p22-underground", sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 12px;
+    --line-height-base: 1.5;
+    --font-weight-base: 400;
+    --letter-spacing-base: 0;
+  
+    /* Spacing */
+    --spacing-tiny: 4px;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 32px;
+    --spacing-xxlarge: 64px;
+    --spacing-xxxlarge: 128px;
+  
+    /* Border Radius */
+    --radius-xs: 4px;
+    --radius-small: 8px;
+    --radius-medium: 16px;
+    --radius-large: 24px;
+  
+    /* Transitions */
+    --transition-speed: 200ms;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(to right, #4a1a86 50%, var(--color-primary) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.25s ease-out;
+    font-weight: 400;
+  }
+  
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4a1a86;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  a:hover {
+    background-position: 0 0;
+  }
+  
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
