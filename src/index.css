@@ -1,15 +1,11 @@
-@import './styles/variables.css';
-@import './styles/type.css';
-@import './styles/layout.css';
-@import './styles/components/buttons.css';
-@import './styles/components/links.css';
-@import './styles/components/canvas.css';
-@import './styles/components/footer.css';
-@import './styles/components/overline.css';
-@import './styles/responsive.css';
-
-.project-image {
-  width: 100%;
-  border: 2px solid var(--color-text);
-  border-radius: var(--radius-xs);
-}
+@import "./styles/variables.css";
+@import "./styles/type.css";
+@import "./styles/layout.css";
+@import "./styles/components/buttons.css";
+@import "./styles/components/links.css";
+@import "./styles/components/canvas.css";
+@import "./styles/components/footer.css";
+@import "./styles/components/overline.css";
+@import "./styles/responsive.css";
+@import "./styles/components/project.css";
+@import "./styles/components/iconbutton.css";

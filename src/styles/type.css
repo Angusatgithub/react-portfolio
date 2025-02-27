@@ -1,44 +1,47 @@
-h1, h2, h3, h4 {
-    margin: 0;
-    line-height: 1.2;
-  }
-  
-  h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: var(--spacing-medium);
-  }
-  
-  h2 {
-    font-size: 3.188rem;
-    font-weight: 500;
-  }
-  
-  h3 {
-    font-size: 2.4rem;
-    font-weight: 500;
-  }
-  
-  h4 {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  
-  .intro-subheader {
-    font-size: 1.75rem;
-    line-height: 140%;
-    margin-bottom: var(--spacing-medium);
-    text-wrap: pretty;
-  }
-  
-  p {
-    margin: 0;
-    margin-bottom: 12px;
-    font-size: 1.25rem;
-  }
-  
-  .caption {
-    font-size: 0.812rem;
-    font-weight: 500;
-    line-height: 140%;
-  }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-medium);
+}
+
+h2 {
+  font-size: 3.188rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.intro-subheader {
+  font-size: 1.75rem;
+  line-height: 140%;
+  margin-bottom: var(--spacing-medium);
+  text-wrap: pretty;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.caption {
+  font-size: 0.812rem;
+  font-weight: 500;
+  line-height: 140%;
+}
