@@ -19,7 +19,12 @@ button {
   }
   
   button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    scale: 0.95;
+    border-radius: var(--radius-large);
   }
   
   .button-primary {

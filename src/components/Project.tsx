@@ -1,12 +1,12 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { getCssVariable } from "../utils/getCssVariable";
 
 interface ProjectProps {
   image: string;
   title: string;
   job: string;
-  details: string[];
-  link: string;
+  details: (string | ReactNode)[];
+  link?: string;
   linkText: string;
   accentcolor?: "purple" | "green" | "blue" | "orange";
 }
@@ -48,17 +48,23 @@ const Project: React.FC<ProjectProps> = ({
         <div className="project-left">
           <div className="project-left-top">
             <h4>{job}</h4>
-            <div className="project-link">
-              <a href={link} target="_blank" rel="noopener noreferrer">
+            {link ? (
+              <div className="project-link">
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  {linkText}
+                </a>
+                <img
+                  src="./short_right.svg"
+                  alt="right arrow icon"
+                  height={32}
+                  width={32}
+                />
+              </div>
+            ) : (
+              <div className="project-text">
                 {linkText}
-              </a>
-              <img
-                src="./short_right.svg"
-                alt="right arrow icon"
-                height={32}
-                width={32}
-              />
-            </div>
+              </div>
+            )}
           </div>
           {details.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>

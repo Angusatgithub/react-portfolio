@@ -8,7 +8,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Now" element={<Now />} />
