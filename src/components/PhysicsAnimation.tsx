@@ -12,7 +12,7 @@ function PhysicsAnimation() {
     // Mouse position tracking refs
     const posX = useRef<number>(0);                     // Current mouse X position relative to canvas
     const posY = useRef<number>(0);                     // Current mouse Y position relative to canvas
-    const mouseIntervalRef = useRef<number | null>(null); // Stores interval ID for continuous grain creation
+    const mouseIntervalRef = useRef<NodeJS.Timeout | null>(null); // Stores interval ID for continuous grain creation
 
     // Setup and cleanup effect
     useEffect(() => {
